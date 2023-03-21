@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .form-body{
+        display: flex;
+        justify-content: center;
+    }
+    .form-body .calculator{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 11px;
+        gap: 5px;
+        background-color: #192238;
+        box-shadow: 5px 5px 20px 0px black;
+        border-radius: 8px;
+        
+    }
+    .calculator .number-input{
+        height: 41px;
+        width: 182px;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    
+    }
+    .rec-bttn{
+        height: 36px;
+        width: 62px;
+        border-radius: 7px;
+        background-color: white;
+        
+    }
+    .rect-bttn{
+        height: 37px;
+        width: 86px;
+        border-radius: 7px;
+        background-color: white;
+        
+    }
+    .number{
+        height: 35px;
+        width: 40px;
+        border-radius: 7px;
+        color: white;
+        background-color: #686363;
+        text-align: center;
+        
+        
+    }
+    .sign{
+        border-radius: 7px;
+        height: 35px;
+        width: 42px;
+        background-color: #13a3d3;
+        
+    }
+    .bttn-body{
+        padding: 8px;
+        gap: 5px;
+    }
+    .bttn-body .clm{
+        margin-top: 5px
+    }
+    .box_shadow{
+        border: none;
+        box-shadow: 2px 2px 1px 0px #d1c2c22e;
+    }
+    .cal{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<body style="background-color: #7374d7;">
+    <section class="cal">
+        <div class ="form-body cal-form">
+            <form class="calculator">
+                <input class ="number-input " type="digit" style= "text-align: right;"placeholder="0">
+                <div class="bttn-body">
+                <div ><button class="rec-bttn box_shadow">C</button>
+                    <button class="rec-bttn box_shadow"><i class="fa-solid fa-arrow-left-long"></i></button>
+                    <button class="sign box_shadow">/</button>
+                </div>
+                <div class="clm "><button class="number box_shadow">7</button>
+                    <button class="number box_shadow">8</button>
+                    <button class="number box_shadow">9</button>
+                    <button class="sign box_shadow">+</button>
+                </div>
+                <div class="clm"><button class="number box_shadow">4</button>
+                    <button class="number box_shadow">5</button>
+                    <button class="number box_shadow">6</button>
+                    <button class="sign box_shadow">-</button>
+                </div>
+                <div class="clm"><button class="number box_shadow">1</button>
+                    <button class="number box_shadow">2</button>
+                    <button class="number box_shadow">3</button>
+                    <button class="sign box_shadow">*</button>
+                </div>
+                <div class="clm"><button class="number box_shadow">.</button>
+                    <button class="number box_shadow">0</button>
+                    <button class="rect-bttn box_shadow">=</button>
+                </div>
+            </div>
+            </form>
+            
+        </div>
+    </section>
+</body>
+</html>

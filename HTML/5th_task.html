@@ -1,0 +1,295 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .pic{
+        border-radius: 80px;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .bd{
+        font-weight: bold;
+    }
+    .bigf{
+        font-size: 2rem;
+        font-weight: 300;
+
+    }
+    .profile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+    .red{
+        height:100%;
+        width:100%;
+        background:white;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        position:relative;
+        flex-wrap:wrap;
+        gap:1rem;
+        padding:2rem 0;
+}
+.blue{
+  height:18rem;
+  width:18rem;
+  background:blue;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  position:relative;
+}
+.green{
+  opacity:0;
+  height:100%;
+  width:100%;
+  background:#00000060;
+  position:absolute;
+  top:0;
+  left:0;
+  transition:0.5s;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:1rem;
+  font-size:10px;
+  color:white;
+}
+.blue:hover .green{
+  opacity:1;
+  transition:0.5s;
+}
+.pic_size{
+    height: 100%;
+    width: 100%;
+}
+.col_mg{
+    margin-top: 1rem;
+    color: #020202;
+    display: flex;
+    gap: 20px;
+}
+.profile .prof_body{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 2rem;
+  width: 90%;
+}
+.ed_btn{
+  background-color: white;
+  border-color: rgb(245 228 196);
+  height: 2rem;
+  width: 7rem;
+  border-radius: 7px;
+}
+.pink{
+  top: 0.5rem;
+  right: 0.5rem;
+  position: absolute;
+  transition: none;
+  color: white;
+}
+.size{
+  font-size: 20px;
+  font-weight: bold;
+}
+.loader {
+    width: 3rem;
+    height: 3rem;
+    border: 0.6rem solid #999;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    margin: 0 auto;
+    animation: spin 5s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.upper{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+</style>
+<body>
+    <section class="profile">
+        <div class="prof_body">
+            <div class="container">
+                
+                    <div class="profile"><img class="pic"src="https://images.unsplash.com/photo-1513721032312-6a18a42c8763?w=152&h=152&fit=crop&crop=faces" alt="">
+                
+            
+                
+                    <div>
+                <div class="upper">
+                    <label class="bigf">janedoe_   </label>
+                    <button class ="ed_btn">Edit Profile</button>
+                    <i class="size fa-solid fa-gear"></i>
+                </div>
+                <div class="col_mg">
+                  <div><label class="bd">164</label>
+                    <label>posts</label>
+                  </div>
+                  <div>
+                      <label class="bd">188</label>
+                    <label>followers</label>
+                  </div>
+                  <div>
+                    <label class="bd">206</label>
+                    <label>following</label>
+                  </div>
+                    
+                </div>
+                <div class="col_mg">
+                    <label class="bd">Jane Doe</label>
+                    <label> Lorem ipsum dolor sit, amet consectetur adipisicing elit📷✈️🏕️ 
+                    </label>
+                    
+                </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    
+        <div>
+            <div class="red">
+              <div class="blue">
+                <img class = "pic_size"src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                <div class="green">
+                    <i class="size fa-regular fa-heart"> 56</i>
+                    <i class="size fa-regular fa-comment"> 2</i>
+                </div>
+              </div>
+              <div class="blue">
+                <img class = "pic_size"src="https://images.unsplash.com/photo-1497445462247-4330a224fdb1?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                <div class="green">
+                    <i class="size fa-regular fa-heart"> 89</i>
+                    <i class="size fa-regular fa-comment"> 5</i>
+                </div>
+              </div>
+              <div class="blue">
+                <img class = "pic_size" src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                <div class="pink">
+                  <i class="size fas fa-clone" aria-hidden="true"></i>
+                </div>
+                <div class="green">
+                    <i class="size fa-regular fa-heart"> 42</i>
+                    <i class="size fa-regular fa-comment"> 1</i>
+                   
+                    
+                </div>
+              </div>
+              <div class="blue">
+                <img  class = "pic_size" src="https://images.unsplash.com/photo-1502630859934-b3b41d18206c?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                <div class="pink">
+                  <i class="size fa-solid fa-video"></i>
+                </div>
+                <div class="green">
+                    <i class="size fa-regular fa-heart"> 38</i>
+                    <i class="size fa-regular fa-comment"> 0</i>
+                    
+                </div>
+              </div>
+              <div class="blue">
+                <img class = "pic_size" src="https://images.unsplash.com/photo-1498471731312-b6d2b8280c61?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                <div class="pink">
+                  <i class="size fas fa-clone" aria-hidden="true"></i>
+                </div>
+                <div class="green">
+                    <i class="size fa-regular fa-heart"> 47</i>
+                    <i class="size fa-regular fa-comment"> 1</i>
+                    
+                </div>
+              </div>
+              <div class="blue">
+                <img class = "pic_size" src="https://images.unsplash.com/photo-1515023115689-589c33041d3c?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                <div class="green">
+                    <i class="size fa-regular fa-heart"> 94</i>
+                    <i class="size fa-regular fa-comment"> 3</i>
+                </div>
+              </div>
+              <div class="blue">
+                <img class = "pic_size" src="https://images.unsplash.com/photo-1504214208698-ea1916a2195a?w=500&h=500&fit=crop" class="gallery-image" alt=""> 
+                <div class="pink">
+                  <i class="size fas fa-clone" aria-hidden="true"></i>
+                </div>
+                <div class="green">
+                    <i class="size fa-regular fa-heart"> 52</i>
+                    <i class="size fa-regular fa-comment"> 4</i>
+                    
+                </div>
+              </div>
+              <div class="blue">
+                <img class = "pic_size" src="https://images.unsplash.com/photo-1515814472071-4d632dbc5d4a?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                <div class="green">
+                    <i class="size fa-regular fa-heart"> 66</i>
+                    <i class="size fa-regular fa-comment"> 2</i>
+                </div>
+              </div>
+              <div class="blue">
+                <img class = "pic_size" src="https://images.unsplash.com/photo-1511407397940-d57f68e81203?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                <div class="pink">
+                  <i class="size fas fa-clone" aria-hidden="true"></i>
+                </div>
+                <div class="green">
+                    <i class="size fa-regular fa-heart"> 45</i>
+                    <i class="size fa-regular fa-comment"> 0</i>
+                    
+                </div>
+              </div>
+              <div class="blue">
+                <img class = "pic_size" src="https://images.unsplash.com/photo-1518481612222-68bbe828ecd1?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                <div class="green">
+                    <i class="size fa-regular fa-heart"> 34</i>
+                    <i class="size fa-regular fa-comment"> 1</i>
+                </div>
+              </div>
+              <div class="blue">
+                <img class = "pic_size" src="https://images.unsplash.com/photo-1505058707965-09a4469a87e4?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                <div class="green">
+                    <i class="size fa-regular fa-heart"> 41</i>
+                    <i class="size fa-regular fa-comment"> 0</i>
+                </div>
+              </div>
+              <div class="blue">
+                <img class = "pic_size" src="https://images.unsplash.com/photo-1423012373122-fff0a5d28cc9?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                <div class="pink">
+                  <i class="size fa-solid fa-video"></i>
+                </div>
+                <div class="green">
+                    <i class="size fa-regular fa-heart"> 30</i>
+                    <i class="size fa-regular fa-comment"> 2</i>
+                    
+                </div>
+              </div>
+            </div>
+           
+            <div class="loader"></div>
+            
+          </div>
+    </section>
+</body>
+</html>
